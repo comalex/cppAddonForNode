@@ -1,16 +1,26 @@
 #include "main.h"
 
+#include <iostream>
+
+using namespace std;
+
 int add(int x, int y)
 {
   return x + y;
 }
 
-int minus(int x, int y)
+char * testFunciton(char text[])
 {
-  return x - y;
+  cout << "start cpp" << endl;
+  cout << text << endl;
+  cout << "end cpp" << endl;
+  return text;
 }
 
-int multiply(int x, int y)
-{
-  return x * y;
+
+int main () {
+  char textValue[] = "Hello world";
+  cout << testFunciton(textValue) << endl;
+  return 0;
 }
+
